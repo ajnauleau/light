@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap');
+
+$brightwhite: #fefefe;
+$brightblue: #0062ff;
+$lightblue: #1d92cf;
+$midblue: #1583cc;
+$easegrey: #8a8a8a;
+$midgrey: #767676; 
+$oddblack: #000000;
+$twoblack: #222222;
+
+/*=============================
+  Base Styles
+=============================*/
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.6;
+  color: $oddblack;
+  font-size: 16px;
+  font-weight: 300;
+  font-family:  BlinkMacSystemFont, Avenir, "Montserrat", "Helvetica Neue", "Avenir Next", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Droid Sans", sans-serif;
+}
+
+/*=============================
+  Alignement
+=============================*/
+
+.gap {
+    height: 1.5em;
+}
+
+.hero {
+    height: 80vh;
+}
+
+.content {
+    font-weight: 1.6rem;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+/*=============================
+  Typography
+=============================*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: $twoblack;
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, Avenir, "Montserrat", "Helvetica Neue", "Avenir Next", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Droid Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+h1 {
+  font-size: 37.009px;
+  line-height: 1.3;
+}
+h2 {
+  font-size: 32.182px;
+  line-height: 1.35;
+}
+h3 {
+  font-size: 27.984px;
+  line-height: 1.4;
+}
+h4 {
+  font-size: 24.334px;
+  line-height: 1.45;
+}
+h5 {
+  font-size: 21.16px;
+  line-height: 1.5;
+}
+h6 {
+  font-size: 18.4px;
+  line-height: 1.55;
+}
+p {
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 33.311px;
+  }
+  h2 {
+    font-size: 29.479px;
+  }
+  h3 {
+    font-size: 26.088px;
+  }
+  h4 {
+    font-size: 23.086px;
+  }
+  h5 {
+    font-size: 20.43px;
+  }
+  h6 {
+    font-size: 18.08px;
+  }
+}
+
+.header {
+    font-weight: 200;
+}
+
+/*=============================
+  Link
+=============================*/
+a {
+  color: $lightblue;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+  color: $midblue;
+}
+/*=============================
+  List
+=============================*/
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 16px;
+  padding-left: 0;
+  list-style-position: inside;
+}
+ul li,
+ol li {
+  margin-bottom: 16px;
+}
+ul li:last-child,
+ol li:last-child {
+  margin-bottom: 0;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-left: 16px;
+}
+
+/*=============================
+  Grid
+=============================*/
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 16px;
+}
+.row:last-child {
+  margin-bottom: 0;
+}
+.row .col {
+  padding: 1em;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.row .col-1 {
+  padding: 1em;
+  width: 8.333333333333332%;
+}
+.row .col-2 {
+  padding: 1em;
+  width: 16.666666666666664%;
+}
+.row .col-3 {
+  padding: 1em;
+  width: 25%;
+}
+.row .col-4 {
+  padding: 1em;
+  width: 33.33333333333333%;
+}
+.row .col-5 {
+  padding: 1em;
+  width: 41.66666666666667%;
+}
+.row .col-6 {
+  padding: 1em;
+  width: 50%;
+}
+.row .col-7 {
+  padding: 1em;
+  width: 58.333333333333336%;
+}
+.row .col-8 {
+  padding: 1em;
+  width: 66.66666666666666%;
+}
+.row .col-9 {
+  padding: 1em;
+  width: 75%;
+}
+.row .col-10 {
+  padding: 1em;
+  width: 83.33333333333334%;
+}
+.row .col-11 {
+  padding: 1em;
+  width: 91.66666666666666%;
+}
+.row .col-12 {
+  padding: 1em;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .row .col,
+  .row [class^='col-'],
+  .row [class*=" col-"] {
+    flex-grow: 0;
+    flex-basis: 100%;
+  }
+}
+
+/*=============================
+  Button
+=============================*/
+
+.button {
+    border: 0;
+    box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.2) inset;
+    font-weight: bold;
+}
+
+/*=============================
+  Code
+=============================*/
+pre {
+  margin-top: 0;
+}
+pre code {
+  display: block;
+  padding: 0.5rem;
+}
+code {
+  padding: 0.2rem 0.5rem;
+  margin: 0 0.2rem;
+  font-size: 90%; 
+  white-space: nowrap;
+  background: #e7e7e7;
+  border: 1px solid #d7d7d7;
+  border-radius: 2px;
+  font-family: "Consolas", "Monaco", "Menlo", monospace;
+}

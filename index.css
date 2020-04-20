@@ -1,0 +1,34 @@
+section {
+    margin-top: 90px;
+}
+
+/* Hero Styling */
+
+.hero h5 {
+    font-weight: 200;
+}
+
+.hero h3 {
+    color: lightgray;
+}
+
+
+
+/* Code Styles */
+
+.method {
+    color: #00A2CD;
+}
+
+.global {
+    color: #db9114;
+}
+
+.string {
+    color: #02C1A7;
+}
+
+.code-block {
+    margin-top: 46px;
+}
+
