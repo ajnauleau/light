@@ -1,5 +1,4 @@
-## light
-Minimal Framework
+<img align="center" src="./assets/banner.png>
 
 ## Usage
 
@@ -13,7 +12,7 @@ This is a minimal framework meant to be simple to use and implement. With very l
 $ npm install --save lightcss
 ```
 
-**Add to Project**
+**add to project**
 
 ```html
 <link rel="stylesheet" href="https://unpkg.com/lightcss"/>
