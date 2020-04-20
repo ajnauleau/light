@@ -137,6 +137,18 @@ p {
   }
 }
 
+
+hr {
+    max-width: 42rem;
+    height: 0;
+    margin: 1.25rem auto;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #BFBFBF;
+    border-left: 0;
+    border-style: dashed;
+}
+
 .header {
     font-weight: 200;
 }
@@ -280,7 +292,7 @@ code {
   margin: 0 0.2rem;
   font-size: 90%; 
   white-space: nowrap;
-  background: #e7e7e7;
+  background: lightblue;
   border: 1px solid #d7d7d7;
   border-radius: 2px;
   font-family: "Consolas", "Monaco", "Menlo", monospace;
