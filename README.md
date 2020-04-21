@@ -9,12 +9,12 @@ This is a minimal framework meant to be simple to use and implement. With very l
 **npm**
 
 ```sh
-$ npm install --save lightcss
+$ npm install --save light-css-framework
 ```
 then
 
 ```js
-import 'lightcss/styles/light.css'
+import 'light-css-framework/styles/light.css'
 ```
 
 **add to project**
