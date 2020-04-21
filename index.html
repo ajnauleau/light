@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="./index.css">
     </head>
     <body>
-       <section id="hero" class="hero container center text-center">
+    <section id="hero" class="hero container center text-center">
            <div>
                 <h3>Light</h3>
                <h5>Minimal Framework</h5>
@@ -21,10 +21,8 @@
                <pre>
                    <code>
                      <span class="method">&lt;link</span>
-                     <span class="global">rel</span>
-                     <span class="string">"stylesheet"</span>
-                     <span class="global">href</span>
-                     <span class="string">"https://unpkg.com/lightcss"</span>
+                     <span class="global">rel</span>=<span class="string">"stylesheet"</span>
+                     <span class="global">href</span>=<span class="string">"https://unpkg.com/lightcss"</span>
                      <span class="method">/&gt;</span> 
                    </code>
                </pre>
@@ -55,15 +53,23 @@
                     LAYOUT
                 </h3>
                 <p class="content">
-                    The main content should be placed within a <code>container</code> for the best alignment.
-                    <pre>
-                    <code>
-                        &lt;div class="container"&gt;
+                    The main content should be placed within a <code>container</code> class for the best alignment.
+                </p>
+                <pre><code>
+                     &lt;div class="container"&gt;
    Content Here
 &lt;/div&gt;
                     </code>
                     </pre>
-                </p>
+                    <p class="content">
+                        Paragraph text should be placed in a <code>content</code> class for best results.
+                    </p>
+                    <pre><code>
+                       &lt;p class="content"&gt;
+    Place paragraph text here
+&lt;/p&gt;
+                    </code>
+                    </pre>
             </div>
             <div class="section">
                 <h3 class="header">
@@ -91,6 +97,59 @@
             </div>
         </div>
         
+        <div class="gap"></div>
+        <div class="section">
+                <h3 class="header">
+                GRID
+            </h3>
+            <p class="content">
+                Light uses a minimal 12 column grid system with common names.
+            </p>
+            
+        <div class="gap"></div>
+        <div class="section">
+                <h3 class="header">
+                NAVIGATION
+            </h3>
+            <p class="content">
+                Forms are designed clean and with minimal style.
+            </p>
+            
+        <div class="gap"></div>
+        <div class="section">
+                <h3 class="header">
+                CARDS
+            </h3>
+            <p class="content">
+                Cards are simple to use and implement.
+            </p>
+            
+        <div class="gap"></div>
+        <div class="section">
+                <h3 class="header">
+                BUTTONS
+            </h3>
+            <p class="content">
+                Light uses three main buttons styles, filled, outline, and light.
+            </p>
+            
+        <div class="gap"></div>
+        <div class="section">
+                <h3 class="header">
+                FORMS
+            </h3>
+            <p class="content">
+                Forms are designed clean and with minimal style.
+            </p>
+            
+        <div class="gap"></div>
+        <div class="section">
+                <h3 class="header">
+                CUSTOMS
+            </h3>
+            <p class="content">
+                Light comes with a few simple utilities which can be used to customize your page.
+            </p>
        </section>
     </body>
 </html>

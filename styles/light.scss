@@ -6,6 +6,7 @@ $brightwhite: #fefefe;
 $brightblue: #0062ff;
 $lightblue: #1d92cf;
 $midblue: #1583cc;
+$deepblue: #032f62;
 $easegrey: #8a8a8a;
 $midgrey: #767676; 
 $oddblack: #000000;
@@ -163,7 +164,7 @@ a {
 }
 a:hover {
   cursor: pointer;
-  color: $midblue;
+  color: $deepblue;
 }
 /*=============================
   List

@@ -1,0 +1,27 @@
+{
+  "name": "lightcss",
+  "version": "1.0.0",
+  "description": "minimal framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajnauleau/light.git"
+  },
+  "keywords": [
+    "light",
+    "css",
+    "minimal",
+    "clean",
+    "easy",
+    "scss"
+  ],
+  "author": "ajnauleau <antoine@nauleau.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ajnauleau/light/issues"
+  },
+  "homepage": "https://github.com/ajnauleau/light#readme"
+}

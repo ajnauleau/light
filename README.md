@@ -1,4 +1,4 @@
-<img align="center" src="./assets/banner.png">
+<img align="center" style="width:240px;height:180px" src="./assets/banner.png">
 
 ## Usage
 
@@ -10,6 +10,10 @@ This is a minimal framework meant to be simple to use and implement. With very l
 
 ```sh
 $ npm install --save lightcss
+```
+
+```js
+import 'lightcss/styles/light.css'
 ```
 
 **add to project**
