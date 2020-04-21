@@ -11,6 +11,7 @@ This is a minimal framework meant to be simple to use and implement. With very l
 ```sh
 $ npm install --save lightcss
 ```
+then
 
 ```js
 import 'lightcss/styles/light.css'

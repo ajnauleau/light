@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link rel="stylesheet" href="./light.css">
+        <link rel="stylesheet" href="./styles/light.css">
         <link rel="stylesheet" href="./index.css">
     </head>
     <body>
@@ -105,14 +105,45 @@
             <p class="content">
                 Light uses a minimal 12 column grid system with common names.
             </p>
-            
+            <div class="container">
+                <div class="row">
+                    <div class="col square">1
+                    </div>
+                    
+                    <div class="col square">2
+                    </div>
+                    
+                    <div class="col square">3
+                    </div>
+                    
+                    <div class="col square">4
+                    </div>
+                </div>
+            </div>
+            <pre>
+                <code class="block">&lt;div class="row"&gt;
+                
+    &lt;div class="col"&gt;1&lt;/div&gt;
+                    
+    &lt;div class="col"&gt;2&lt;/div&gt;
+    
+    &lt;div class="col"&gt;3&lt;/div&gt;
+    
+    &lt;div class="col"&gt;4&lt;/div&gt;
+
+&lt;/div&gt;  </code>
+            </pre>
+            <p class="content">
+                You can expand to the following <code>col-1</code> to <code>col-12</code> classes.
+            </p>
+        </div>            
         <div class="gap"></div>
         <div class="section">
                 <h3 class="header">
                 NAVIGATION
             </h3>
             <p class="content">
-                Forms are designed clean and with minimal style.
+                Split navigation options and links.
             </p>
             
         <div class="gap"></div>
@@ -132,6 +163,44 @@
             <p class="content">
                 Light uses three main buttons styles, filled, outline, and light.
             </p>
+            
+            <div class="row">
+                <div class="col">
+                    <button>Filled</button>
+                </div>
+                <div class="col">
+                    <p>This is the default button, available with:</p>
+                    <code><span class="method">&lt;button</span<span class="method">&gt;</span>
+                    Default
+                    <span class="method">&lt;/button</span><span class="method">&gt;</span>
+                    </code>
+                </div>
+            </div>
+               
+            <div class="row">
+               <div class="col">
+                    <button class="outline">Outline</button>
+                </div>
+                <div class="col">
+                    <p>The outline button is available using the outline class:</p>
+                    <code><span class="method">&lt;button</span>
+                    <span class="global">class</span>=<span class="string">'outline'</span><span class="method">&gt;</span>
+                    Outline
+                    <span class="method">&lt;/button</span><span class="method">&gt;</span>
+                    </code>
+                </div>
+            </div>
+                
+                <div class="row">
+                    <div class="col">
+                        <button class="light">Light</button>
+                    </div>
+                    <div class="col">
+                    
+                    </div>
+                </div>
+                
+            </div>
             
         <div class="gap"></div>
         <div class="section">

@@ -24,12 +24,6 @@ body {
 .gap {
   height: 1.5em; }
 
-.hero {
-  height: 80vh; }
-
-.content {
-  font-weight: 1.6rem; }
-
 .center {
   display: flex;
   align-items: center;
@@ -39,10 +33,19 @@ body {
 .text-center {
   text-align: center; }
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  width: 80%; }
+.justify-center {
+  display: flex;
+  justify-content: center; }
+
+.justify-column {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+.justify-column-between {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; }
 
 /*=============================
   Typography
@@ -175,7 +178,8 @@ ol ol {
   margin-bottom: 0; }
 
 .row .col {
-  padding: 1em;
+  margin: 0.5em;
+  padding: 0.5em;
   flex-grow: 1;
   flex-basis: 0; }
 
@@ -236,10 +240,61 @@ ol ol {
 /*=============================
   Button
 =============================*/
-.button {
+button {
+  color: #fefefe;
+  cursor: pointer;
   border: 0;
+  padding: 0.7em 1em;
+  margin: 0 0.2rem;
+  border-radius: 0.2em;
   box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.2) inset;
-  font-weight: bold; }
+  font-weight: 500;
+  font-size: 1em;
+  width: 128px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000; }
+
+button.outline {
+  color: #000000;
+  cursor: pointer;
+  border: 0;
+  margin: 0 0.2rem;
+  padding: 0.7em 1em;
+  border-radius: 0.2em;
+  box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.2) inset;
+  font-weight: 500;
+  font-size: 1em;
+  width: 128px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000000;
+  background: transparent; }
+
+button.light {
+  cursor: pointer;
+  color: #fefefe;
+  border: 0;
+  margin: 0 0.2rem;
+  padding: 0.7em 1em;
+  border-radius: 0.2em;
+  box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.2) inset;
+  font-weight: 500;
+  font-size: 1em;
+  width: 128px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: lightblue;
+  border: 1px solid #fefefe; }
+
+button.light:hover {
+  background: #1a82b9; }
 
 /*=============================
   Code
@@ -249,7 +304,11 @@ pre {
 
 pre code {
   display: block;
-  padding: 0.5rem; }
+  padding: 0.5rem;
+  word-wrap: break-word; }
+
+pre code.block {
+  white-space: pre-wrap; }
 
 code {
   padding: 0.2rem 0.5rem;
@@ -260,5 +319,19 @@ code {
   border: 1px solid #d7d7d7;
   border-radius: 2px;
   font-family: "Consolas", "Monaco", "Menlo", monospace; }
+
+/*============================
+  Utilities
+============================*/
+.hero {
+  height: 80vh; }
+
+.content {
+  font-weight: 1.6rem; }
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 80%; }
 
 /*# sourceMappingURL=light.css.map */
