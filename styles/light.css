@@ -33,19 +33,96 @@ body {
 .text-center {
   text-align: center; }
 
+.text-right {
+  text-align: right; }
+
+.text-left {
+  text-align: left; }
+
 .justify-center {
   display: flex;
   justify-content: center; }
 
 .justify-column {
   display: flex;
-  justify-content: center;
   flex-direction: column; }
 
 .justify-column-between {
   display: flex;
   justify-content: space-between;
   flex-direction: column; }
+
+.m {
+  margin: 1rem; }
+
+.mt {
+  margin-top: 1rem; }
+
+.mb {
+  margin-bottom: 1rem; }
+
+.m-2 {
+  margin: 2rem; }
+
+.mt-2 {
+  margin-top: 2rem; }
+
+.mb-2 {
+  margin-bottom: 2rem; }
+
+.m-3 {
+  margin: 3rem; }
+
+.mt-3 {
+  margin-top: 3rem; }
+
+.mb-3 {
+  margin-bottom: 3rem; }
+
+.m-4 {
+  margin: 4rem; }
+
+.mt-4 {
+  margin-top: 4rem; }
+
+.mb-4 {
+  margin-bottom: 4rem; }
+
+.p {
+  padding: 1rem; }
+
+.pt {
+  padding-top: 1rem; }
+
+.pb {
+  padding-bottom: 1rem; }
+
+.p-2 {
+  padding: 2rem; }
+
+.pt-2 {
+  padding-top: 2rem; }
+
+.pb-2 {
+  padding-bottom: 2rem; }
+
+.p-3 {
+  padding: 3rem; }
+
+.pt-3 {
+  padding-top: 3rem; }
+
+.pb-3 {
+  padding-bottom: 3rem; }
+
+.p-4 {
+  padding: 4rem; }
+
+.pt-4 {
+  padding-top: 4rem; }
+
+.pb-4 {
+  padding-bottom: 4rem; }
 
 /*=============================
   Typography
@@ -238,6 +315,160 @@ ol ol {
     flex-grow: 0;
     flex-basis: 100%; } }
 /*=============================
+  Navigation
+=============================*/
+.nav {
+  width: 100%;
+  display: flex;
+  padding-top: 0.25rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  align-items: center;
+  border-top: 1px solid #d7d7d7;
+  border-bottom: 1px solid #d7d7d7; }
+
+.nav.fixed {
+  position: fixed;
+  z-index: 1; }
+
+.nav-logo {
+  padding: 1rem;
+  display: flex;
+  align-items: center; }
+
+.nav-links {
+  padding: 1rem;
+  margin-bottom: 0.75rem; }
+
+.nav-links.right {
+  display: flex;
+  flex-grow: -1;
+  width: 100%;
+  flex-direction: row-reverse; }
+
+.nav-links.left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.nav-links.centered {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.nav-item {
+  padding: 0.5rem; }
+
+/*=============================
+  Cards
+=============================*/
+.cards {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  margin-bottom: 2rem; }
+
+.card {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2px;
+  border: 1px solid #d7d7d7;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem; }
+
+.card.light {
+  background: lightblue;
+  border: 1px solid #767676; }
+
+.card-content {
+  padding: 2rem;
+  border-bottom: 1px solid #d7d7d7; }
+
+.card-content.light {
+  padding: 2rem;
+  border-bottom: 1px solid #767676; }
+
+.card-footer {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+/*=============================
+  Form
+=============================*/
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=search],
+input[type=number],
+input[type=file],
+input[type=tel],
+input[type=url],
+select,
+textarea {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 16px;
+  font-size: 16px;
+  background: #f5f5f5;
+  border: 1px solid #a7a7a7;
+  border-radius: 2px;
+  transition: all 0.2s ease; }
+
+input[type=text].light,
+input[type=password].light,
+input[type=email].light,
+input[type=search].light,
+input[type=number].light,
+input[type=file].light,
+input[type=tel].light,
+input[type=url].light,
+select.light,
+textarea.light {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 16px;
+  font-size: 16px;
+  color: #767676;
+  background: lightblue;
+  border: 1px solid #a7a7a7;
+  border-radius: 2px;
+  transition: all 0.2s ease; }
+
+input[type=text]:hover,
+input[type=password]:hover,
+input[type=email]:hover,
+input[type=search]:hover,
+input[type=number]:hover,
+input[type=file]:hover,
+input[type=tel]:hover,
+input[type=url]:hover,
+select:hover,
+textarea:hover {
+  border-color: #111; }
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=search]:focus,
+input[type=number]:focus,
+input[type=file]:focus,
+input[type=tel]:focus,
+input[type=url]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #0062ff; }
+
+textarea {
+  min-height: 70px; }
+
+/*=============================
   Button
 =============================*/
 button {
@@ -277,7 +508,7 @@ button.outline {
 
 button.light {
   cursor: pointer;
-  color: #fefefe;
+  color: #767676;
   border: 0;
   margin: 0 0.2rem;
   padding: 0.7em 1em;
@@ -294,7 +525,9 @@ button.light {
   border: 1px solid #fefefe; }
 
 button.light:hover {
-  background: #1a82b9; }
+  color: #fefefe;
+  background: #1a82b9;
+  transition: 200ms; }
 
 /*=============================
   Code
@@ -325,6 +558,9 @@ code {
 ============================*/
 .hero {
   height: 80vh; }
+
+.block {
+  display: block; }
 
 .content {
   font-weight: 1.6rem; }

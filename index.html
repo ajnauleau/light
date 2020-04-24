@@ -29,7 +29,7 @@
                <h5>NPM</h5>
                <pre>
                    <code>
-                       $ npm install lightcss
+                       $ npm install light-css-framework
                    </code>
                </pre>
                </div>
@@ -121,17 +121,14 @@
                 </div>
             </div>
             <pre>
-                <code class="block">&lt;div class="row"&gt;
-                
-    &lt;div class="col"&gt;1&lt;/div&gt;
-                    
-    &lt;div class="col"&gt;2&lt;/div&gt;
-    
-    &lt;div class="col"&gt;3&lt;/div&gt;
-    
-    &lt;div class="col"&gt;4&lt;/div&gt;
-
-&lt;/div&gt;  </code>
+               <code class="block">
+    <span class="method">&lt;div</span><span class="global"> class</span>=<span class="string">"row"</span><span class="method">></span> 
+        <span class="method">&lt;div</span><span class="global"> class</span>=<span class="string">"col"</span><span class="method">></span>1<span class="method">&lt;/div&gt;</span>
+        <span class="method">&lt;div</span><span class="global"> class</span>=<span class="string">"col"</span><span class="method">></span>2<span class="method">&lt;/div&gt;</span>
+        <span class="method">&lt;div</span><span class="global"> class</span>=<span class="string">"col"</span><span class="method">></span>3<span class="method">&lt;/div&gt;</span>
+        <span class="method">&lt;div</span><span class="global"> class</span>=<span class="string">"col"</span><span class="method">></span>4<span class="method">&lt;/div&gt;</span>
+    <span class="method">&lt;/div&gt;</span>
+               </code>
             </pre>
             <p class="content">
                 You can expand to the following <code>col-1</code> to <code>col-12</code> classes.
@@ -145,6 +142,33 @@
             <p class="content">
                 Split navigation options and links.
             </p>
+            <div class="nav">
+                <div class="nav-logo">
+                    <h4>light</h4>
+                </div>
+                <div class="nav-links left">
+                    <a class="nav-item" href="#">account</a>
+                    <a class="nav-item" href="#">links</a>
+                    <a class="nav-item" href="#">contact</a>
+                </div>
+            </div>
+            <pre>
+        <code class="block">    
+    <span class="method">&lt;div</span><span class="global"> class</span>=<span class="string">"nav"</span><span class="method">></span>    
+        <span class="method">&lt;div</span> <span class="global">class</span>=<span class="string">"nav-logo"</span><span class="method">></span>
+            <span class="method">&lt;h4&gt;</span>light<span class="method">&lt;/h4&gt;</span>
+        <span class="method">&lt;/div&gt;</span>
+        <span class="method">&lt;div</span><span class="global"> class</span>=<span class="string">"nav-links left"</span><span class="method">></span>
+            <span class="method">&lt;a</span> <span class="global">class</span>=<span class="string">"nav-item"</span><span class="global">href</span>=<span class="string">"#"</span><span class="method">></span>account<span class="method">&lt;/a&gt;</span>
+            <span class="method">&lt;a</span> <span class="global">class</span>=<span class="string">"nav-item"</span><span class="global">href</span>=<span class="string">"#"</span><span class="method">></span>links<span class="method">&lt;/a&gt;</span>
+            <span class="method">&lt;a</span> <span class="global">class</span>=<span class="string">"nav-item"</span><span class="global">href</span>=<span class="string">"#"</span><span class="method">></span>contact<span class="method">&lt;/a&gt;</span>
+        <span class="method">&lt;/div&gt;</span>
+    <span class="method">&lt;/div&gt;</span>
+           </code>
+            </pre>
+            <p class="content">
+                Navigation links can we aligned <code>left</code>, <code>centered</code>, or <code>right</code> to the logo and <code>fixed</code> to the top.
+            </p>
             
         <div class="gap"></div>
         <div class="section">
@@ -154,6 +178,32 @@
             <p class="content">
                 Cards are simple to use and implement.
             </p>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-content"><p>Here is some content which serves to demonstrate how this card can look. This is the default card.</p></div>
+                    <div class="card-footer"><h5>Header</h5><a href="#">Link</a></div>
+                </div>
+                <div class="card light">
+                    <div class="card-content light"><p>Here is some content which serves to demonstrate how this card can look. This is the <code>light</code> card.</p></div>
+                    <div class="card-footer"><h5>Header</h5><a href="#">Link</a></div>
+                </div>
+            </div>
+            <pre>
+                <code class="block">
+<span class="global">        <span class="method">&lt;div</span> class</span>=<span class="string">"cards"</span><span class="method">&gt;</span> <span class="global">
+                <span class="method">&lt;div</span> class</span>=<span class="string">"card"</span><span class="method">&gt;</span> <span class="global">
+                    <span class="method">&lt;div</span> class</span>=<span class="string">"card-content"</span><span class="method">&gt;</span><span class="method">&lt;p</span><span class="method">&gt;</span>Content<span class="method">&lt;/p</span><span class="method">&gt;</span><span class="method">&lt;/div</span><span class="method">&gt;</span> <span class="global">
+                    <span class="method">&lt;div</span> class</span>=<span class="string">"card-footer"</span><span class="method">&gt;</span><span class="method">&lt;a</span><span class="method">&gt;</span>Header<span class="method">&lt;/a</span><span class="method">&gt;</span> <span class="global">
+                     <span class="method">&lt;a</span> href</span>=<span class="string">"#"</span><span class="method">&gt;</span>Link<span class="method">&lt;/a</span><span class="method">&gt;</span><span class="method">&lt;/div</span><span class="method">&gt;</span>
+                <span class="method">&lt;/div</span><span class="method">&gt;</span> <span class="global">
+                <span class="method">&lt;div</span> class</span>=<span class="string">"card light"</span><span class="method">&gt;</span> <span class="global">
+                    <span class="method">&lt;div</span> class</span>=<span class="string">"card-content"</span><span class="method">&gt;</span><span class="method">&lt;p</span><span class="method">&gt;</span>Content<span class="method">&lt;/p</span><span class="method">&gt;</span><span class="method">&lt;/div</span><span class="method">&gt;</span> <span class="global">
+                    <span class="method">&lt;div</span> class</span>=<span class="string">"card-footer"</span><span class="method">&gt;</span><span class="method">&lt;h3</span><span class="method">&gt;</span>Header<span class="method">&lt;/h3</span><span class="method">&gt;</span> <span class="global">
+                     <span class="method">&lt;a</span> href</span>=<span class="string">"#"</span><span class="method">&gt;</span>Link<span class="method">&lt;/a</span><span class="method">&gt;</span><span class="method">&lt;/div</span><span class="method">&gt;</span>
+                <span class="method">&lt;/div</span><span class="method">&gt;</span>
+         <span class="method">&lt;/div</span><span class="method">&gt;</span>
+                </code>
+            </pre>
             
         <div class="gap"></div>
         <div class="section">
@@ -164,20 +214,20 @@
                 Light uses three main buttons styles, filled, outline, and light.
             </p>
             
-            <div class="row">
-                <div class="col">
+            <div class="row center">
+                <div class="col-5" >
                     <button>Filled</button>
                 </div>
                 <div class="col">
                     <p>This is the default button, available with:</p>
                     <code><span class="method">&lt;button</span<span class="method">&gt;</span>
-                    Default
+                    Filled
                     <span class="method">&lt;/button</span><span class="method">&gt;</span>
                     </code>
                 </div>
             </div>
                
-            <div class="row">
+            <div class="row center">
                <div class="col">
                     <button class="outline">Outline</button>
                 </div>
@@ -191,14 +241,21 @@
                 </div>
             </div>
                 
-                <div class="row">
+            <div class="row center">
+                <div class="col">
+                    <button class="light">Light</button>
+                </div>
+                <div class="col">
                     <div class="col">
-                        <button class="light">Light</button>
-                    </div>
-                    <div class="col">
-                    
+                    <p>The light button is also available using the light class:</p>
+                    <code><span class="method">&lt;button</span>
+                    <span class="global">class</span>=<span class="string">'light'</span><span class="method">&gt;</span>
+                    Light
+                    <span class="method">&lt;/button</span><span class="method">&gt;</span>
+                    </code>
                     </div>
                 </div>
+            </div>
                 
             </div>
             
@@ -211,6 +268,78 @@
                 Forms are designed clean and with minimal style.
             </p>
             
+             <div class="row">
+                <div class="col">
+                    <label for="name">
+                        Name
+                    </label><br>
+                    <input type="text" placeholder="John Doe">
+                </div>
+                <div class="col">
+                    <label for="name">
+                        Selection
+                    </label><br>
+                    <select name="selection">
+                        <option value="message">Message</option>
+                        <option value="content">Content</option>
+                        <option value="text">Text</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="row">
+               <div class="col justify-column">
+                    <label for="textarea">Comment</label>
+                   <textarea name="textarea" placeholder="Additional details ... "></textarea>
+               </div>
+            </div>
+            
+            <pre>
+                <code class="block">
+ <span class="method">&lt;form<span class="method">&gt;</span></span> <span class="global">
+        <span class="method">&lt;input</span> type=<span class="string">"text"</span> placeholder</span>=<span class="string">"John Doe"</span><span class="method">/&gt;</span> <span class="global">
+        <span class="method">&lt;input</span> type=<span class="string">"text"</span> placeholder</span>=<span class="string">"Comments"</span><span class="method">/&gt;</span> <span class="global">
+        <span class="method">&lt;textarea</span> placeholder</span>=<span class="string">"details ... "</span><span class="method">&gt;</span><span class="method">&lt;/textarea<span class="method">&gt;</span></span>
+ <span class="method">&lt;/form<span class="method">&gt;</span></span>
+                </code>
+            </pre>
+            
+            <p class="content">With <code>light</code> class added</p>
+            
+            <div class="row">
+                <div class="col">
+                    <label for="name">
+                        Name
+                    </label><br>
+                    <input class="light" type="text" placeholder="John Doe">
+                </div>
+                <div class="col">
+                    <label for="name">
+                        Selection
+                    </label><br>
+                    <select class="light" name="selection">
+                        <option value="message">Message</option>
+                        <option value="content">Content</option>
+                        <option value="text">Text</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+               <div class="col justify-column">
+                    <label for="textarea">Comment</label>
+                   <textarea class="light" name="textarea" placeholder="Additional details ... "></textarea>
+               </div>
+            </div>
+            <pre>
+                <code class="block">
+ <span class="method">&lt;form<span class="method">&gt;</span></span> <span class="global">
+        <span class="method">&lt;input</span> class=<span class="string">"light"</span> type=<span class="string">"text"</span> placeholder</span>=<span class="string">"John Doe"</span><span class="method">/&gt;</span> <span class="global">
+        <span class="method">&lt;input</span> class=<span class="string">"light"</span> type=<span class="string">"text"</span> placeholder</span>=<span class="string">"Comments"</span><span class="method">/&gt;</span> <span class="global">
+        <span class="method">&lt;textarea</span>  class=<span class="string">"light"</span> placeholder</span>=<span class="string">"details ... "</span><span class="method">&gt;</span><span class="method">&lt;/textarea<span class="method">&gt;</span></span>
+ <span class="method">&lt;/form<span class="method">&gt;</span></span>
+                </code>
+            </pre>
+        </div>
         <div class="gap"></div>
         <div class="section">
                 <h3 class="header">
@@ -219,6 +348,42 @@
             <p class="content">
                 Light comes with a few simple utilities which can be used to customize your page.
             </p>
+            <div class="block">
+                <p><code>.hero</code> - Front page banner.</p>
+                <p><code>.content</code> - For text content.</p>
+                <p><code>.container</code> - To align and place main content.</p>
+                <p><code>.gap</code> - Adds a <code>1rem</code> gap.</p>
+                <p><code>.center</code> - Centers items.</p>
+                <p><code>.text-center</code> - Align text to the center.</p>
+                
+                <p><code>.text-right</code> - Align text to the right.</p>
+                
+                <p><code>.text-left</code> - Align text to the left.</p>
+                
+                <p><code>.justify-center</code> - Align flex justify center.</p>
+                
+                <p><code>.justify-column</code> - Align flex justify column.</p>
+                
+                <p><code>.justify-column-between</code> - Align flex justify column space between.</p>
+                
+                <p><code>.m</code> to <code>.m4</code> - Margin of <code>1rem</code> to <code>4rem</code>.</p>
+                
+                <p><code>.mt</code> to <code>.mt-4</code> - Margin-top of <code>1rem</code> to  <code>4rem</code>.</p>
+                
+                <p><code>.m</code> to <code>.mb-4</code> - Margin-bottom of <code>1rem</code> to <code>4rem</code>.</p>
+                
+                <p><code>.p</code> to <code>.p4</code> - Padding of <code>1rem</code> to  <code>4rem</code>.</p>
+                
+                <p><code>.pb</code> to <code>.pb-4</code> - Padding-bottom of <code>1rem</code> to  <code>4rem</code>.</p>
+                
+                <p><code>.pt</code> to <code>.pt-4</code> - Padding-top of <code>1rem</code> to  <code>4rem</code>.</p>
+            </div>
+       </section>
+       <div class="gap"></div>
+       <hr>
+       <section id="footer" class="container">
+           <p class="content">Made by <a href="http://github.com/ajnauleau">@ajnauleau</a></p>
+           <p class="content">Syntax Highlighting made with <a href="https://github.com/ajnauleau/highlight-syntax">highlight-html-syntax</a></p>
        </section>
     </body>
 </html>
