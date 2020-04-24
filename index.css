@@ -22,8 +22,15 @@ section {
     padding: 0.2rem 0.5rem;
     margin: 0 0.2rem;
     font-size: 90%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: lightblue;
     border: 1px solid #d7d7d7;
+}
+
+.square p {
+    margin-bottom: 0px;
 }
 
 
