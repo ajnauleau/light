@@ -20,10 +20,12 @@ import 'light-css-framework/styles/light.css'
 **add to project**
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/lightcss"/>
+<link rel="stylesheet" href="https://unpkg.com/light-css-framework"/>
 ```
 
 ## [Documentation](https://nauleau.io/light/)
+
+Visit https://nauleau.io/light/ for detailed documentation.
 
 ## Credit
 

@@ -2,7 +2,7 @@
   "name": "light-css-framework",
   "version": "1.1.0",
   "description": "minimal framework",
-  "main": "index.js",
+  "main": "styles/light.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
